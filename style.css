@@ -1,0 +1,36 @@
+
+.logo-container {
+  display: flex;
+  align-items: center; 
+  gap: 1rem;           
+}
+
+.logo {
+  width: 60px;        
+  height: auto;
+}
+
+.hero {
+  grid-column: 1/-1;
+  background-color: hsl(0, 100%, 30%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: hsl(0, 100%, 25%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: hsl(0, 100%, 35%);
+  transform: scale(1.05);
+}
