@@ -3,51 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miami Heat Fan Site - Home</title>
+  <title>Miami Heat Fan Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  
   <header>
-   <div class="logo-container">
-     <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" alt="Miami Heat Logo" class="logo">
-     <h1>Miami Heat Fan Site</h1>
-   </div>
-   <nav>
-     <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="team.html">Team Roster</a></li>
-       <li><a href="games.html">Games & Stats</a></li>
-       <li><a href="gallery.html">Gallery</a></li>
-       <li><a href="contact.html">Contact</a></li>
-     </ul>
-   </nav>
+    <div class="header-top">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" alt="Miami Heat Logo" class="logo">
+      <h1>Miami Heat Fan Site</h1>
+    </div>
+
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="team.html">Team Roster</a></li>
+        <li><a href="games.html">Games & Stats</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  
+  <main class="main-layout">
+
+    
     <section class="hero">
       <h2>Welcome to Miami Heat Fan Site</h2>
-      <p>Latest news and highlights from the team!</p>
-      <a href="team.html"><button class="cta-button">See Team Roster</button></a>
+      <p>Latest news and highlights from the team</p>
+
+      
+      <a href="team.html">
+        <button class="cta-button">View Team Roster</button>
+      </a>
     </section>
 
-    <section class="container">
-      <article class="news-card">
-        <h3>Player Trade Update</h3>
-        <p>Miami Heat acquires new star player this season!</p>
-      </article>
-      <article class="news-card">
-        <h3>Next Game Info</h3>
-        <p>Heat vs Lakers, 20 March 2026, 19:00</p>
-      </article>
-      <article class="news-card">
-        <h3>Highlight of the Week</h3>
-        <p>Watch the amazing dunk by Jimmy Butler!</p>
-      </article>
-    </section>
-   </main>
+    
+    <section class="news-section">
 
+      <article class="news-card">
+        <h3>Latest News</h3>
+        <p>Miami Heat signs a new rising star for the upcoming season.</p>
+        <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/5105623.png&w=350&h=254" alt="Kel'el Ware" width="400">
+      </article>
+
+      <article class="news-card">
+        <h3>Next Game</h3>
+        <p>Heat vs Lakers – March 20, 2026</p>
+        <img src="https://scontent.fgse1-1.fna.fbcdn.net/v/t39.30808-6/654420952_1356125619883729_5714322531416589087_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=exAfJTL23BQQ7kNvwH5bXiD&_nc_oc=AdoTMgpDtIdBPiX-LBMO2ofiK3FbdhV2hbaMGuLOmTFOPgMheZhOkW_zdiRTFzTSXU0&_nc_zt=23&_nc_ht=scontent.fgse1-1.fna&_nc_gid=fS_0bYK2aIVQkXxigKlPHw&_nc_ss=7a30f&oh=00_AfySAIzQs0LjjtgyJNOVYPl_mAFUkvp95qGBQWvLH4beWw&oe=69C6E5E0" alt="Next Game" width="300">
+      </article>
+
+      <article class="news-card">
+        <h3>Top Highlight</h3>
+        <p>Jimmy Butler with an incredible performance last game.</p>
+        <img src="https://dims.apnews.com/dims4/default/cef2893/2147483647/strip/true/crop/3000x2003+0+0/resize/599x400!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F1e%2F9d%2F8dcdbb9d928b20f088331a53aeee%2F43e493e93dbd4925b37f89b6284be8a4" alt="Jimmy butler highlight" width="500">
+      </article>
+
+    </section>
+
+  </main>
+
+  
   <footer>
-    &copy; 2026 Miami Heat Fan Site
+    <p>&copy; 2026 Miami Heat Fan Site</p>
   </footer>
+
 </body>
 </html>

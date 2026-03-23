@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Roster</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+
+<body>
+
+<header>
+<div class="header-top">
+<img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" class="logo">
+<h1>Miami Heat Fan Site</h1>
+</div>
+
+<nav>
+<ul class="nav-menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="team.html" class="active">Team Roster</a></li>
+<li><a href="games.html">Games & Stats</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main class="container">
+
+<section>
+<h2>Team Roster</h2>
+
+<form class="filter-form">
+<label>Search Player
+<input type="search" placeholder="Search player">
+</label>
+
+<label>Position
+<select>
+<option>All</option>
+<option>Guard</option>
+<option>Forward</option>
+<option>Center</option>
+</select>
+</label>
+
+<label>Sort by
+<select>
+<option>Name</option>
+<option>Height</option>
+<option>Number</option>
+</select>
+</label>
+
+<button type="button" onclick="sortTable()">Sort</button>
+</form>
+
+<table class="roster-table">
+<thead>
+<tr>
+<th>Photo</th>
+<th>Name</th>
+<th>Position</th>
+<th>Number</th>
+<th>Height</th>
+<th>Stats</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/202710.png" alt="Jimmy Butler"></td>
+<td>Jimmy Butler</td>
+<td>Forward</td>
+<td>22</td>
+<td>2.01 m</td>
+<td><button onclick="showStats('Butler')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628389.png" alt="Bam Adebayo"></td>
+<td>Bam Adebayo</td>
+<td>Center</td>
+<td>13</td>
+<td>2.06 m</td>
+<td><button onclick="showStats('Adebayo')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://a.espncdn.com/i/headshots/nba/players/full/4395725.png" alt="Tyler Herro"></td>
+<td>Tyler Herro</td>
+<td>Guard</td>
+<td>14</td>
+<td>1.96 m</td>
+<td><button onclick="showStats('Herro')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1626179.png" alt="Terry Rozier"></td>
+<td>Terry Rozier</td>
+<td>Guard</td>
+<td>2</td>
+<td>1.85 m</td>
+<td><button onclick="showStats('Rozier')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629130.png" alt="Duncan Robinson"></td>
+<td>Duncan Robinson</td>
+<td>Guard</td>
+<td>55</td>
+<td>2.01 m</td>
+<td><button onclick="showStats('Robinson')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631170.png" alt="Jaime Jaquez Jr."></td>
+<td>Jaime Jaquez Jr.</td>
+<td>Forward</td>
+<td>11</td>
+<td>1.98 m</td>
+<td><button onclick="showStats('Jaquez')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3449.png&w=350&h=254" alt="Kevin Love"></td>
+<td>Kevin Love</td>
+<td>Forward</td>
+<td>42</td>
+<td>2.03 m</td>
+<td><button onclick="showStats('Love')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628997.png" alt="Caleb Martin"></td>
+<td>Caleb Martin</td>
+<td>Forward</td>
+<td>16</td>
+<td>1.96 m</td>
+<td><button onclick="showStats('Martin')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629312.png" alt="Haywood Highsmith"></td>
+<td>Haywood Highsmith</td>
+<td>Forward</td>
+<td>24</td>
+<td>1.96 m</td>
+<td><button onclick="showStats('Highsmith')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1626196.png" alt="Josh Richardson"></td>
+<td>Josh Richardson</td>
+<td>Guard</td>
+<td>0</td>
+<td>1.96 m</td>
+<td><button onclick="showStats('Richardson')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628418.png" alt="Thomas Bryant"></td>
+<td>Thomas Bryant</td>
+<td>Center</td>
+<td>31</td>
+<td>2.08 m</td>
+<td><button onclick="showStats('Bryant')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1631115.png" alt="Orlando Robinson"></td>
+<td>Orlando Robinson</td>
+<td>Center</td>
+<td>25</td>
+<td>2.11 m</td>
+<td><button onclick="showStats('ORobinson')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1626153.png" alt="Delon Wright"></td>
+<td>Delon Wright</td>
+<td>Guard</td>
+<td>4</td>
+<td>1.96 m</td>
+<td><button onclick="showStats('Wright')">View</button></td>
+</tr>
+
+<tr>
+<td><img src="https://cdn.nba.com/headshots/nba/latest/1040x760/203999.png" alt="Nikola Jovic"></td>
+<td>Nikola Jović</td>
+<td>Forward</td>
+<td>5</td>
+<td>2.08 m</td>
+<td><button onclick="showStats('Jovic')">View</button></td>
+</tr>
+
+</tbody>
+</table>
+
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Miami Heat Fan Site</p>
+</footer>
+
+</body>
+</html>
