@@ -1,78 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="header-top">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" class="logo" alt="Miami heat logga">
+        <h1>Miami Heat Fan Site</h1>
+      </div>
 
-<header>
-<div class="header-top">
-<img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" class="logo">
-<h1>Miami Heat Fan Site</h1>
-</div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team Roster</a></li>
+          <li><a href="games.html">Games & Stats</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<nav>
-<ul class="nav-menu">
-<li><a href="index.html">Home</a></li>
-<li><a href="team.html">Team Roster</a></li>
-<li><a href="games.html">Games & Stats</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html" class="active">Contact</a></li>
-</ul>
-</nav>
-</header>
+    <main class="container">
+      <section>
+        <h2>Fan Feedback</h2>
 
-<main class="container">
+        <form class="contact-form">
+          <input type="text" placeholder="Name" required>
+          <input type="email" placeholder="Email">
+          <input type="tel" placeholder="Phone">
+          <input type="date">
+          <input type="number" placeholder="Age">
+          <input type="file">
+          <input type="url" placeholder="Favorite team website">
 
-<section>
-<h2>Fan Feedback</h2>
+          <select>
+            <option>General feedback</option>
+            <option>Report issue</option>
+            <option>Fan message</option>
+          </select>
 
-<form class="contact-form">
+          <div class="form-group checkbox-group">
+            <label>
+              <input type="checkbox"> Subscribe to newsletter
+            </label>
 
-<input type="text" placeholder="Name" required>
-<input type="email" placeholder="Email">
-<input type="tel" placeholder="Phone">
-<input type="date">
-<input type="number" placeholder="Age">
-<input type="file">
-<input type="url" placeholder="Favorite team website">
+            <label>
+              <input type="radio" name="fan"> Huge fan
+            </label>
+          </div>
 
-<select>
-<option>General feedback</option>
-<option>Report issue</option>
-<option>Fan message</option>
-</select>
+          <label>How big of a fan are you?</label>
+          <input type="range" min="0" max="100" value="50">
 
-<div class="form-group checkbox-group">
-<label>
-<input type="checkbox"> Subscribe to newsletter
-</label>
+          <textarea placeholder="Message"></textarea>
 
-<label>
-<input type="radio" name="fan"> Huge fan
-</label>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
 
-<label>How big of a fan are you?</label>
-<input type="range">
-</div>
-
-<textarea placeholder="Message"></textarea>
-
-<button type="submit">Send</button>
-
-</form>
-
-</section>
-
-</main>
-
-<footer>
-<p>&copy; 2026 Miami Heat Fan Site</p>
-</footer>
-
-</body>
+    <footer>
+      <p>&copy; 2026 Miami Heat Fan Site</p>
+    </footer>
+  </body>
 </html>

@@ -1,110 +1,106 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Games & Stats</title>
-<link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games & Stats</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
+  <body>
+    <header>
+      <div class="header-top">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" class="logo" alt="Miami heat logga">
+        <h1>Miami Heat Fan Site</h1>
+      </div>
 
-<header>
-<div class="header-top">
-<img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" class="logo">
-<h1>Miami Heat Fan Site</h1>
-</div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team Roster</a></li>
+          <li><a href="games.html" class="active">Games & Stats</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<nav>
-<ul class="nav-menu">
-<li><a href="index.html">Home</a></li>
-<li><a href="team.html">Team Roster</a></li>
-<li><a href="games.html" class="active">Games & Stats</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
+    <main class="container games-page">
+      <section class="games-section">
+        <h2>Upcoming Games</h2>
 
-<main class="container games-page">
+        <table class="games-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Opponent</th>
+              <th>Location</th>
+            </tr>
+          </thead>
 
-<section class="games-section">
-<h2>Upcoming Games</h2>
+          <tbody>
+            <tr>
+              <td>Mar 20</td>
+              <td>Lakers</td>
+              <td>Away</td>
+            </tr>
+            <tr>
+              <td>Mar 25</td>
+              <td>Celtics</td>
+              <td>Home</td>
+            </tr>
+            <tr>
+              <td>Mar 28</td>
+              <td>Bucks</td>
+              <td>Away</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-<table class="games-table">
-<thead>
-<tr>
-<th>Date</th>
-<th>Opponent</th>
-<th>Location</th>
-</tr>
-</thead>
+      <section class="standings-section">
+        <h2>League Standings</h2>
 
-<tbody>
-<tr>
-<td>Mar 20</td>
-<td>Lakers</td>
-<td>Away</td>
-</tr>
-<tr>
-<td>Mar 25</td>
-<td>Celtics</td>
-<td>Home</td>
-</tr>
-<tr>
-<td>Mar 28</td>
-<td>Bucks</td>
-<td>Away</td>
-</tr>
-</tbody>
-</table>
-</section>
+        <table class="standings-table">
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th>W</th>
+              <th>L</th>
+              <th>PCT</th>
+              <th>GB</th>
+            </tr>
+          </thead>
 
-<section class="standings-section">
-<h2>League Standings</h2>
+          <tbody>
+            <tr>
+              <td>Heat</td>
+              <td>45</td>
+              <td>20</td>
+              <td>.692</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Celtics</td>
+              <td>43</td>
+              <td>22</td>
+              <td>.661</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Bucks</td>
+              <td>40</td>
+              <td>25</td>
+              <td>.615</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
-<table class="standings-table">
-<thead>
-<tr>
-<th>Team</th>
-<th>W</th>
-<th>L</th>
-<th>PCT</th>
-<th>GB</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td>Heat</td>
-<td>45</td>
-<td>20</td>
-<td>.692</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Celtics</td>
-<td>43</td>
-<td>22</td>
-<td>.661</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Bucks</td>
-<td>40</td>
-<td>25</td>
-<td>.615</td>
-<td>5</td>
-</tr>
-</tbody>
-</table>
-</section>
-
-</main>
-
-<footer>
-<p>&copy; 2026 Miami Heat Fan Site</p>
-</footer>
-
-</body>
+    <footer>
+      <p>&copy; 2026 Miami Heat Fan Site</p>
+    </footer>
+  </body>
 </html>

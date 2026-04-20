@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 .header-top {
   display: flex;
   justify-content: center;
@@ -27,6 +29,18 @@
 
 .nav-menu a:hover {
   text-decoration: underline;
+}
+
+.nav-menu a:visited {
+  color: hsl(0, 60%, 35%);
+}
+
+.nav-menu a:active {
+  transform: scale(0.95);
+}
+
+.nav-menu > li {
+  display: inline-block;
 }
 
 .active {
@@ -92,13 +106,12 @@
   }
 }
 
-html, body {
-  height: 100%;
-}
 
 body {
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
 }
 
 main {
@@ -250,6 +263,14 @@ border:1px solid #ccc;
 border-color:red;
 }
 
+.contact-form textarea:focus {
+  border-color: blue;
+}
+
+.contact-form select:hover {
+  background-color: hsl(0, 0%, 95%);
+}
+
 .contact-form input + select{
 background:hsl(0, 0%, 98%);
 }
@@ -338,4 +359,15 @@ height:18px;
 background:hsla(0,80%,90%,0.3);
 padding:5px;
 border-radius:5px;
+}
+
+/* Syskon-selektorer */
+h2 + p {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+  .main-layout {
+    grid-template-columns: 1fr 2fr;
+  }
 }
