@@ -1,6 +1,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+body{
+  animation: fade 1s ease-in;
+}
+
+@keyframes fade {
+from{
+  opacity:0;
+}
+to {
+  opacity: 1;
+}
+}
+
 .header-top {
   display: flex;
   justify-content: center;
@@ -97,13 +110,6 @@
 
 .news-card:hover {
   transform: translateY(-5px);
-}
-
-
-@media (max-width: 768px) {
-  .nav-menu {
-    flex-direction: column;
-  }
 }
 
 
@@ -332,11 +338,6 @@ background:hsl(0,0%,95%);
 background:hsl(0,80%,90%);
 }
 
-@media (max-width:768px){
-.games-page{
-grid-template-columns:1fr;
-}
-}
 
 .form-group{
 margin-bottom:15px;
@@ -361,7 +362,6 @@ padding:5px;
 border-radius:5px;
 }
 
-/* Syskon-selektorer */
 h2 + p {
   margin-top: 0.5rem;
 }
@@ -370,4 +370,16 @@ h2 + p {
   .main-layout {
     grid-template-columns: 1fr 2fr;
   }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:768px){
+.games-page{
+grid-template-columns:1fr;
+}
 }
